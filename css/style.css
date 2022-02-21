@@ -13,9 +13,10 @@
 --Body: #FFFFFF;
 --Header: #FFFFFF;
 --RetroImmagini : #000000;
---FDivColor : #000000;
 --Footer:#FFFFFF;
+
 /* Useless */
+/* --FDivColor : #000000; */
 /* --SDivColor : rgb(0, 134, 255); */
 /* --SDColors:rgb(171, 207, 231); */
 }
@@ -84,7 +85,7 @@ body {
 
 .First_Div {
     position: relative; 
-    background-color: var(--FDivColor);
+    background-color: var(--RetroImmagini);
     height: 450px;
     border-radius: 15px;
 }
@@ -147,6 +148,7 @@ body {
 /* Classi della seconda Macroarea 
 ********/
 
+
 /* Container Principale */
 .row {
     width: 100%;
@@ -164,6 +166,9 @@ body {
     width: 20%;
     background-color: var(--Body);
 }
+
+/* Object 1 fa in modo che si crei un container per
+le varie immagini delle colonne di DX e SX */
 
 .Object_1 {
     position: absolute;
