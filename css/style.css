@@ -24,7 +24,7 @@
 body {
     width: 1000px;
     background-color: var(--Body);
-    margin: auto;
+    margin: auto; 
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -101,27 +101,45 @@ body {
     top: 65%;
     color: #FFFFFF;
     width: 500px;
-    height: 150px;
+    height: max-content;
 }
 
+.Banner_Cont h2 {
+    font-weight: 900;
+}
 
 /* Seconda MacroArea */
 
 .Second_Div {
     position: relative; 
-    background-color: var(--SDivColor);
+    background-color: var(--Body);
     height: 700px;
     margin-bottom: 15px;
 }
 
+/* Header del secondo Div */
+
 .SD_Header {
     width: 100%; 
-    background-color: var(--SDColors);
+    background-color: var(--Body);
     position: absolute;
     top: 0;
     height: 100px;
     margin: auto;
-    margin-bottom: 5px;  
+
+}
+
+.SD_item {
+    position: absolute;
+    top: 15%;
+    width: 300px;
+    height: 100px;
+}
+
+/* Font per titolo all'interno del second div item */
+
+.SD_item h1 {
+    font-family: 'Shippori Antique', sans-serif;
 }
 
 /* Classi della seconda Macroarea 
@@ -134,17 +152,46 @@ body {
     bottom:3.5%; 
 }
 
+/* Aree dell'aside */
+
 .Small_Item { 
+    position: relative;
     float:left;
     height: 100%;
-    width: 23.5%;
-    background-color: var(--SDColors);
+    width: 20%;
+    background-color: var(--Body);
 }
+
+.Object_1 {
+    position: absolute;
+    border-radius: 15px;
+    background-color: #000000;
+    width:100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+
+.Object_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+
+
+.Text-p {
+    font-size: small; 
+    margin-top: 5px;
+}
+
+/* */
 
 .Medium_Item {
     float:left;
     height: 100%;
-    width: 50%;
+    width: 57%;
     margin-left: 1.5%;
     margin-right: 1.5%;
     background-color: var(--SDColors);
