@@ -117,7 +117,6 @@ body {
     position: relative; 
     background-color: var(--Body);
     height: 640px;
-    margin-bottom: 10px;
 }
 
 /* Header del secondo Div */
@@ -202,6 +201,14 @@ le varie immagini delle colonne di DX e SX */
     background-color: var(--body);
 }
 
+
+.Object_2 {
+    border-radius: 15px;
+    background-color: var(--RetroImmagini);
+    width:100%;
+    height: 180px;
+}
+
 .Object_2 img {
     width: 100%;
     height: 100%;
@@ -210,12 +217,6 @@ le varie immagini delle colonne di DX e SX */
     border-radius: 15px;
 }
 
-.Object_2 {
-    border-radius: 15px;
-    background-color: var(--RetroImmagini);
-    width:100%;
-    height: 180px;
-}
 
 .clearfix::after{
     content: "";
@@ -235,7 +236,7 @@ le varie immagini delle colonne di DX e SX */
     text-align: center;
     position: relative; 
     background-color: var(--Footer);
-    height: 100px;
+    height: 50px;
 }
 
 .Footer {
@@ -246,4 +247,38 @@ le varie immagini delle colonne di DX e SX */
 .Heart {
     color: red;
     font-size:x-large;
+}
+
+/* Terza MacroArea */
+
+.Third_Div {
+    position: relative; 
+    background-color:var(--Body);
+    height: 500px;
+    margin-bottom: 15px;
+}
+
+.Small_Item_BONUS { 
+    position: relative;
+    float:left;
+    height: 100%;
+    width: 23%;
+    background-color: var(--Body);
+}
+
+.Middle {
+    position: relative;
+    float:left;
+    height: 100%;
+    width: 23%;
+    margin-left: 2.667%;
+    background-color: var(--Body);
+}
+
+/* Container Principale */
+.row {
+    width: 100%;
+    height: 520px;
+    position: absolute;
+    top: 18%;
 }
