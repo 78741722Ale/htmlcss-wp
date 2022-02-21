@@ -1,0 +1,118 @@
+/* Regola generale
+*******/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Palette colori Figma
+****************/
+:root 
+{
+--Body: #FFFFFF;
+--Header: rgb(229, 121, 230);
+--FDivColor : rgb(225, 214, 122);
+--SDivColor : rgb(0, 134, 255);
+--Footer:rgb(136, 1, 254);
+--SDColors:rgb(171, 207, 231);
+}
+
+/* Common Utilities
+************/
+
+body {
+    width: 1200px;
+    background-color: var(--Body);
+    margin: auto;
+}
+
+.Container_Header,
+.First_Div,
+.Second_Div,
+.Container_Footer 
+{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* Header
+***********/
+
+.Container_Header {
+    background-color: var(--Header);
+    height: 150px;
+    margin-top: 30px;
+}
+
+/* Zona del Main
+***********/
+
+/* Prima MacroArea */
+
+.First_Div {
+    position: relative; 
+    background-color: var(--FDivColor);
+    height: 500px;
+}
+
+/* Seconda MacroArea */
+
+.Second_Div {
+    position: relative; 
+    background-color: var(--SDivColor);
+    height: 700px;
+    margin-bottom: 15px;
+}
+
+.SD_Header {
+    width: 100%; 
+    background-color: var(--SDColors);
+    position: absolute;
+    top: 0;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 5px;  
+}
+
+/* Classi della seconda Macroarea 
+********/
+
+.row {
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    bottom:3.5%; 
+}
+
+.Small_Item { 
+    float:left;
+    height: 100%;
+    width: 23.5%;
+    background-color: var(--SDColors);
+}
+
+.Medium_Item {
+    float:left;
+    height: 100%;
+    width: 50%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    background-color: var(--SDColors);
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;  
+}
+
+/* Footer 
+*************/
+
+.Container_Footer {
+    position: relative; 
+    background-color: var(--Footer);
+    height: 100px;
+}
