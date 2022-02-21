@@ -14,6 +14,7 @@
 --Header: #FFFFFF;
 --RetroImmagini : #000000;
 --Footer:#FFFFFF;
+--Border: rgba(211, 211, 211, 0.5);
 
 /* Useless */
 /* --FDivColor : #000000; */
@@ -51,7 +52,7 @@ body {
 }
 
 .Logo {
-    border-right: 1px solid rgba(211, 211, 211, 0.5);
+    border-right: 1px solid var(--Border);
     position: absolute;
     float: left;
     width: 150px;
@@ -67,9 +68,11 @@ body {
 }
 
 .btn {
+    font-weight: 900;
+    text-decoration: none;
     font-size:15px;
     text-transform: uppercase;
-    color: rgba(128, 128, 128, 0.5);
+    color: rgba(128, 128, 128, 0.6);
     padding: 5px;
     padding-left: 0px;
     background-color: var(--Body);
@@ -146,7 +149,6 @@ body {
 
 /* Classi della seconda Macroarea 
 ********/
-
 
 /* Container Principale */
 .row {
@@ -232,11 +234,13 @@ le varie immagini delle colonne di DX e SX */
 *************/
 
 .Container_Footer {
+    padding-top: 5px;
     margin-top: 5px;
     text-align: center;
     position: relative; 
     background-color: var(--Footer);
     height: 50px;
+    border-top: 1px solid var(--Border);
 }
 
 .Footer {
@@ -273,12 +277,4 @@ le varie immagini delle colonne di DX e SX */
     width: 23%;
     margin-left: 2.667%;
     background-color: var(--Body);
-}
-
-/* Container Principale */
-.row {
-    width: 100%;
-    height: 520px;
-    position: absolute;
-    top: 18%;
 }
