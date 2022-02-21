@@ -48,7 +48,6 @@ body {
     position: relative;
     background-color: var(--Header);
     height: 150px;
-    margin-top: 10px;
 }
 
 .Logo {
@@ -56,7 +55,6 @@ body {
     position: absolute;
     float: left;
     width: 150px;
-    margin-left: 5px;
     padding-right: 1rem;
     top: 25px;
 }
@@ -64,7 +62,6 @@ body {
 .objects {
     position: absolute;
     float: left;
-    margin-left: 5px;
     margin-right: 5px;
     bottom: 15px;
 }
