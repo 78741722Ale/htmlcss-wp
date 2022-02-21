@@ -24,7 +24,7 @@
 ************/
 
 body {
-    width: 1000px;
+    width: 950px;
     background-color: var(--Body);
     margin: auto; 
     font-family: 'Montserrat', sans-serif;
@@ -147,6 +147,7 @@ body {
 /* Classi della seconda Macroarea 
 ********/
 
+/* Container Principale */
 .row {
     width: 100%;
     height: 520px;
@@ -228,6 +229,12 @@ body {
     height: 100px;
 }
 
+.Footer {
+    font-weight: 900;
+    font-size:smaller;
+}
+
 .Heart {
     color: red;
+    font-size:x-large;
 }
