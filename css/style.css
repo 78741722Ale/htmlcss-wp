@@ -1,6 +1,6 @@
 /* Regola generale
 *******/
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -12,10 +12,12 @@
 {
 --Body: #FFFFFF;
 --Header: #FFFFFF;
+--RetroImmagini : #000000;
 --FDivColor : #000000;
---SDivColor : rgb(0, 134, 255);
---Footer:rgb(136, 1, 254);
---SDColors:rgb(171, 207, 231);
+--Footer:#FFFFFF;
+/* Useless */
+/* --SDivColor : rgb(0, 134, 255); */
+/* --SDColors:rgb(171, 207, 231); */
 }
 
 /* Common Utilities
@@ -35,7 +37,7 @@ body {
 {
     width: 100%;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 /* Header
@@ -113,8 +115,8 @@ body {
 .Second_Div {
     position: relative; 
     background-color: var(--Body);
-    height: 700px;
-    margin-bottom: 15px;
+    height: 640px;
+    margin-bottom: 10px;
 }
 
 /* Header del secondo Div */
@@ -147,9 +149,9 @@ body {
 
 .row {
     width: 100%;
-    height: 550px;
+    height: 520px;
     position: absolute;
-    bottom:3.5%; 
+    top: 18%;
 }
 
 /* Aree dell'aside */
@@ -165,11 +167,9 @@ body {
 .Object_1 {
     position: absolute;
     border-radius: 15px;
-    background-color: #000000;
+    background-color: var(--RetroImmagini);
     width:100%;
     height: 200px;
-    top: 0;
-    left: 0;
 }
 
 .Object_1 img {
@@ -180,13 +180,12 @@ body {
     border-radius: 15px;
 }
 
-
 .Text-p {
     font-size: small; 
     margin-top: 5px;
 }
 
-/* */
+/* classi della colonna centrale */
 
 .Medium_Item {
     float:left;
@@ -194,7 +193,22 @@ body {
     width: 57%;
     margin-left: 1.5%;
     margin-right: 1.5%;
-    background-color: var(--SDColors);
+    background-color: var(--body);
+}
+
+.Object_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+
+.Object_2 {
+    border-radius: 15px;
+    background-color: var(--RetroImmagini);
+    width:100%;
+    height: 200px;
 }
 
 .clearfix::after{
@@ -207,7 +221,13 @@ body {
 *************/
 
 .Container_Footer {
+    margin-top: 5px;
+    text-align: center;
     position: relative; 
     background-color: var(--Footer);
     height: 100px;
+}
+
+.Heart {
+    color: red;
 }
