@@ -12,7 +12,7 @@
 {
 --Body: #FFFFFF;
 --Header: #FFFFFF;
---FDivColor : rgb(225, 214, 122);
+--FDivColor : #000000;
 --SDivColor : rgb(0, 134, 255);
 --Footer:rgb(136, 1, 254);
 --SDColors:rgb(171, 207, 231);
@@ -22,9 +22,10 @@
 ************/
 
 body {
-    width: 1200px;
+    width: 1000px;
     background-color: var(--Body);
     margin: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Container_Header,
@@ -74,7 +75,6 @@ body {
     border: 0px solid var(--Body);
 }
 
-
 /* Zona del Main
 ***********/
 
@@ -83,8 +83,19 @@ body {
 .First_Div {
     position: relative; 
     background-color: var(--FDivColor);
-    height: 500px;
+    height: 450px;
+    border-radius: 15px;
 }
+
+.First_Div img {  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+
+
 
 /* Seconda MacroArea */
 
