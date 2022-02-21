@@ -35,7 +35,7 @@ body {
 {
     width: 100%;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 /* Header
@@ -95,6 +95,14 @@ body {
     border-radius: 15px;
 }
 
+.Banner_Cont {
+    position: absolute;
+    left: 5%;
+    top: 65%;
+    color: #FFFFFF;
+    width: 500px;
+    height: 150px;
+}
 
 
 /* Seconda MacroArea */
