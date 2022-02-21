@@ -11,7 +11,7 @@
 :root 
 {
 --Body: #FFFFFF;
---Header: rgb(229, 121, 230);
+--Header: #FFFFFF;
 --FDivColor : rgb(225, 214, 122);
 --SDivColor : rgb(0, 134, 255);
 --Footer:rgb(136, 1, 254);
@@ -41,10 +41,39 @@ body {
 ***********/
 
 .Container_Header {
+    position: relative;
     background-color: var(--Header);
     height: 150px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
+
+.Logo {
+    border-right: 1px solid rgba(211, 211, 211, 0.5);
+    position: absolute;
+    float: left;
+    width: 150px;
+    margin-left: 5px;
+    padding-right: 1rem;
+    top: 25px;
+}
+
+.objects {
+    position: absolute;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    bottom: 15px;
+}
+
+.btn {
+    font-size:15px;
+    text-transform: uppercase;
+    color: rgba(128, 128, 128, 0.5);
+    padding: 5px;
+    background-color: var(--Body);
+    border: 0px solid var(--Body);
+}
+
 
 /* Zona del Main
 ***********/
